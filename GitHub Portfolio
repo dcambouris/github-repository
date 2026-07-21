@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, World!</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1 class="name"> David Cambouris</h1>
+        <p class="tagline">Web Developer in disciplina</p>
+    </header>
+
+    <section id="about">
+          <h2>About Me</h2>
+        <p>I am a passionate and aspiring web developer with a multiple disciplined foundation in HTML, CSS, and JavaScript. My goal is to create engaging and user-friendly web applications that provides unparralleled user experiences.</p>    
+    </section>
+
+    <section id="skills">
+       <h2>Skills</h2>
+         <ul>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node.js</li>
+         </ul>
+    </section>
+
+    <section id="projects">
+       <h2>My Sample Projects</h2> 
+        <div class="project-card">
+         <h3>First Portfolio Site</h3>
+            <p>This is the first sample project showcasing my skills in web development.</p>
+            <a href="https://www.wikipedia.org/">View Project</a>
+        </div>
+
+       <div class="project-card">
+            <h3>Second Portfolio Site</h3>
+            <p>This is the second sample project showcasing my skills in web development.</p>
+            <a href="https://www.wikipedia.org/">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Third Portfolio Site</h3>
+            <p>This is the third sample project showcasing my skills in web development.</p>
+            <a href="https://www.wikipedia.org/">View Project</a>
+        </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+       <p>Provide your email address</p>      
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" class="input-field" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" class="input-field" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" class="input-field" rows="4" required></textarea>
+
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+         <p>&copy; 2026 David Cambouris. All rights reserved.</p>        
+    </footer>
+
+    <script>
+         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
