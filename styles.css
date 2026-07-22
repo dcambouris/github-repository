@@ -1,187 +1,201 @@
-body {
+<style>
+  body {
     font-family: 'Lato', sans-serif;
     margin: 0;
     background-color: #f8f9fa;
-    }
-
-title {
-    background-image: url("C:\Users\david\Documents\GitHub\github-repository\Hexagon Backround.jpg");
-    max-width: 1000px;
-    text-align: center;
-    position: sticky;
-    padding: 25px 0;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-
-nav {
-    background-image: url("C:\Users\david\Documents\GitHub\github-repository\Hexagon Backround.jpg");
-    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+  }
+
+  .title {
+    background-image: url('hexagons.jpg');
+    max-width: 1000px;
+    width: 90%;
     text-align: center;
     position: sticky;
     padding: 25px 0;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
     border-radius: 10px;
-}
+  }
 
-nav ul {
+  nav {
+    background-color: #ffffff;
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    color: #4A006C;
+    position: sticky;
+    padding: 25px 0;
+    border-radius: 10px;
+  }
+
+  nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
+  }
 
-nav li {
+  nav li {
     display: inline;
     margin: 0 20px;
-}
+  }
 
-nav a {
+  nav a {
     text-decoration: none;
     color: #4A006C;
     font-weight: bold;
     font-size: 1.2em;
     transition: color 0.3s ease-in-out;
-}
+  }
 
-nav a:hover {
+  nav a:hover {
     color: #ccc;
-}
+  }
 
-header {
+  header {
     text-align: center;
-    background-image: url("C:\Users\david\Documents\GitHub\github-repository\Hexagon Backround.jpg");
+    background-image: url('hexagons.jpg');
     max-width: 1000px;
+    width: 90%;
+    margin: 0 auto 20px auto;
     color: #4A006C;
     padding: 100px 40px;
     border-radius: 10px;
-}
+  }
 
-.name {
-  font-size: 2.5em;
-  margin-bottom: 5px;
-}
+  .name {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+  }
 
-.tagline {
+  .tagline {
     font-style: italic;
     color: #4A006C;
-}
+  }
 
-#about {
+  #about {
     text-align: center;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
     max-width: 1500px;
+    width: 90%;
+    margin: 20px auto;
     border-radius: 10px;
     padding: 100px 40px;
-    margin: 20px 0;
     background-color: #D3ABD3;
-}
+  }
 
-#skills {
+  #skills {
     text-align: center;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-    background-image: url("C:\Users\david\Documents\GitHub\github-repository\Hexagon Backround.jpg");
+    background-image: url('hexagons.jpg');
     max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
     color: #4A006C;
     padding: 100px 40px;
     border-radius: 10px;
-}
+  }
 
-#skills h2 {
-  color: #4A006C;
-}  
+  #skills h2 {
+    color: #4A006C;
+  }
 
-#skills ul {
+  #skills ul {
     list-style-type: none;
     padding: 0;
     display: flex;
     justify-content: center;
-}
+  }
 
-#skills li {
-    display: inline;
+  #skills li {
+    display: inline-block;
     font-weight: bold;
     color: #4A006C;
     margin: 0 15px;
-}    
+  }
 
-#projects {
+  #projects {
     text-align: center;
     max-width: 1500px;
+    width: 90%;
+    margin: 20px auto;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     background-color: #D3ABD3;
     padding: 100px 40px;
-    margin: 20px 0;
-}
+  }
 
-.project-card {
+  .project-card {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
     background-color: #f8f9fa;
     padding: 25px;
-    margin: 20px;
+    margin: 20px 0;
     border-radius: 10px;
     border: 1px solid #ced4da;
   }
 
-.project-card:hover {
+  .project-card:hover {
     transform: scale(1.05);
-}
+  }
 
-.project-card h3 {
+  .project-card h3 {
     color: #343a40;
-}
+  }
 
-.project-card p {
+  .project-card p {
     color: #555;
-}
+  }
 
-.project-card .project-link {
+  .project-card .project-link {
     color: #007bff;
     text-decoration: none;
     font-weight: bold;
     display: block;
     margin-top: 15px;
-}
+  }
 
-.project-card .project-link:hover {
+  .project-card .project-link:hover {
     text-decoration: underline;
-}
+  }
 
-#contact {
+  #contact {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-    background-image: url("C:\Users\david\Documents\GitHub\github-repository\Hexagon Backround.jpg");
+    background-image: url('hexagons.jpg');
     max-width: 1000px;
+    width: 90%;
+    margin: 20px auto;
     padding: 60px;
-    margin: 20px 0;
     border-radius: 10px;
     font-weight: bold;
     color: #4A006C;
-}
+  }
 
-#contact h2 {
+  #contact h2 {
     text-align: center;
-}
+  }
 
-#contact p {
+  #contact p {
     text-align: center;
-}
+  }
 
-.contact-email {
+  .contact-email {
     font-size: 1.2em;
     color: #4A006C;
-}
+  }
 
-.input-field {
+  .input-field {
     width: 100%;
     padding: 15px;
     margin: 15px 0;
     border: 1px solid #ced4da;
     border-radius: 5px;
-}
+    box-sizing: border-box;
+  }
 
-.submit-button {
+  .submit-button {
     background-color: #007bff;
     color: #ffffff;
     padding: 15px;
@@ -189,19 +203,21 @@ header {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
-}
+  }
 
-.submit-button:hover {
+  .submit-button:hover {
     background-color: #0056b3;
-}
+  }
 
-footer {
-    bottom: 0;
+  footer {
     width: 100%;
     text-align: center;
-    background-image: url("C:\Users\david\Documents\GitHub\github-repository\Hexagon Backround.jpg");
+    background-image: url('hexagons.jpg');
     max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
     color: #4A006C;
     padding: 20px;
     font-size: 1em;
-}
+  }
+</style>
